@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Money Transfer Application</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<h1>Money Transfer Application</h1>
+	<form id="payment-form">
+		<label for="sender">Sender Account:</label>
+		<input type="text" id="sender" name="sender" required><br><br>
+		<label for="receiver">Recipient Account:</label>
+		<input type="text" id="receiver" name="receiver" required><br><br>
+		<label for="amount">Amount:</label>
+		<input type="number" id="amount" name="amount" min="1" required><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br><br>
+		<button type="submit">Send Payment</button>
+	</form>
+
+	<div id="response"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>
